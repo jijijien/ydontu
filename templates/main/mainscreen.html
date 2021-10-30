@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+    <head>
+        <title>Y-돈츄</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+        <!-- pybo CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'mainstyle.css' %}">
+    </head>
+    <body>
+        <!-- 네비게이션바 -->
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #1335a3;">
+            <a class="navbar-brand" href="{% url 'screen' %}">Y-돈츄</a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">로그인</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="content">
+            <div class="name">
+            <style>
+                .name {
+                    border: 3px solid #80ABEF;
+                    padding-top: 10px;
+                    margin: 10px;
+                    margin-top: 0px;
+                    width: 95%;
+                }
+
+            </style>
+            <ul class="point">
+                <li>150P</li>
+                <li>until Green Level</li>
+            </ul>
+            <p></p>
+            <img src="{% static 'mainem/aaa.png' %}" alt="My Image" width=90% style="padding-left: 10px;">
+            <center>
+                
+                <p></p>
+                <img src="{% static 'mainem/qr.png' %}" alt="My Image" width=70%>
+            </center>
+            
+            <style>
+                ul li {
+                    list-style-type: none; 
+                    float: left;
+                    padding-left: 10px;
+                    color: #797979;
+                    font-family: sans-serif;
+                }
+                ul {display: inline-block;}
+
+            </style>
+
+
+
+        </div>
+        
+        
+        
+        <footer>
+                    
+            <div class="sch_home_shortcut" id="HOME_SHORTCUT"style="border-top:1px solid rgb(168, 168, 168);">
+
+                <div class="shs_item">
+                    <a href="/naverapp/?version=3&amp;cmd=onMenu&amp;menuCode=NEWS&amp;showToast=true" class="shs_link ITEM" data-code="menu.NEWS" data-clk="shortnew">
+                        <div class="shs_service_mw">
+                            <picture>
+                                <source media="false" class="ICON_DARK" srcset="https://s.pstatic.net/static/www/mobile/up/service/menu/20210614/news_icon_88x88_dark.png">
+                                <img width="30" height="30" alt="" class="shs_service_m ICON" src="{% static 'mainem/home icon.png' %}">
+                            </picture>
+                        </div>
+                        <span class="shs_text TITLE">홈</span>
+                    </a>
+                </div>
+                <div class="shs_item">
+                    <a href="/naverapp/?version=3&amp;cmd=onMenu&amp;menuCode=SHOPPING&amp;showToast=true" class="shs_link ITEM" data-code="menu.SHOPPING" data-clk="shortsho">
+                        <div class="shs_service_mw">
+                            <picture>
+                                <source media="false" class="ICON_DARK" srcset="https://s.pstatic.net/static/www/mobile/up/service/menu/20210614/shopping_icon_88x88_dark.png">
+                                <img width="30" height="30" alt="" class="shs_service_m ICON" src="{% static 'mainem/people icon.png' %}">
+                            </picture>
+                        </div>
+                        <span class="shs_text TITLE">사용자 수</span>
+                    </a>
+                </div>
+                <div class="shs_item">
+                    <a href="/naverapp/?version=3&amp;cmd=onMenu&amp;menuCode=DATA&amp;showToast=true" class="shs_link ITEM" data-code="menu.DATA" data-clk="shortdat">
+                        <div class="shs_service_mw">
+                            <picture>
+                                <source media="false" class="ICON_DARK" srcset="https://s.pstatic.net/static/www/mobile/up/service/menu/20210614/data_icon_88x88_dark.png">
+                                <img width="30" height="30" alt="" class="shs_service_m ICON" src="{% static 'mainem/calendar icon.png' %}">
+                            </picture>
+                        </div>
+                        <span class="shs_text TITLE">기록</span>
+                    </a>
+                </div>
+                <div class="shs_item">
+                    <a href="/naverapp/?version=3&amp;cmd=onMenu&amp;menuCode=ENT&amp;showToast=true" class="shs_link ITEM" data-code="menu.ENT" data-clk="shortent">
+                        <div class="shs_service_mw">
+                            <picture>
+                                <source media="false" class="ICON_DARK" srcset="https://s.pstatic.net/static/www/mobile/up/service/menu/20210614/ent_icon_88x88_dark.png">
+                                <img width="30" height="30" alt="" class="shs_service_m ICON" src="{% static 'mainem/chat icon.png' %}">
+                            </picture>
+                        </div>
+                        <span class="shs_text TITLE">공유</span>
+                    </a>
+                </div>
+                <style>
+                    
+                    div {display: inline-block;}
+
+                </style>
+                
+
+            </div>
+
+
+
+        </footer>
+        <p></p>
+        
+    </body>
+</html>
